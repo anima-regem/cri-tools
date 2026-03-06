@@ -1,6 +1,6 @@
 module sigs.k8s.io/cri-tools/hack/tools
 
-go 1.22.1
+go 1.25.8
 
 require (
 	github.com/Mirantis/cri-dockerd v0.3.15
