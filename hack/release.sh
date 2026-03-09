@@ -20,7 +20,7 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-VERSION=$(git describe --abbrev=0 --tag)
+VERSION=${GITHUB_REF_NAME:-$(git describe --abbrev=0 --tag)}
 CRI_CTL_PLATFORMS=(
     linux/amd64
     linux/386
